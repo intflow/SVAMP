@@ -1,0 +1,25 @@
+{
+    "run_cv_asdiv-a": {
+        "run_name": "run_cv_asdiv-a",
+        "5-fold avg acc score": "0.7229964337500491",
+        "Fold0 acc": 0.7184873949579832,
+        "Fold1 acc": 0.7184873949579832,
+        "Fold2 acc": 0.7521008403361344,
+        "Fold3 acc": 0.7341772151898734,
+        "Fold4 acc": 0.6917293233082706,
+        "epochs": 50,
+        "embedding": "roberta",
+        "embedding_size": 768,
+        "embedding_lr": 8e-06,
+        "freeze_emb": false,
+        "cell_type": "lstm",
+        "bidirectional": true,
+        "hidden_size": 256,
+        "depth": 2,
+        "lr": 0.0002,
+        "batch_size": 4,
+        "dropout": 0.1,
+        "separate optimizers": false,
+        "opt": "adam"
+    }
+}

@@ -1,0 +1,934 @@
+2021-05-30 07:13:26,359 | DEBUG | main.py: 141 : main() ::	 Created Relevant Directories
+2021-05-30 07:13:26,359 | INFO | main.py: 142 : main() ::	 Experiment Name: run_cv_asdiv-a
+2021-05-30 07:13:26,359 | DEBUG | main.py: 50 : load_data() ::	 Loading Training Data...
+2021-05-30 07:13:26,372 | INFO | main.py: 69 : load_data() ::	 Training and Validation Data Loaded:
+Train Size: 980
+Val Size: 240
+2021-05-30 07:13:26,373 | DEBUG | main.py: 148 : main() ::	 Creating Vocab...
+2021-05-30 07:13:28,353 | INFO | main.py: 163 : main() ::	 Vocab Created with number of words : 2893
+2021-05-30 07:13:28,355 | INFO | main.py: 170 : main() ::	 Vocab saved at models/run_cv_asdiv-a_fold3/vocab1.p
+2021-05-30 07:13:28,356 | WARNING | helper.py: 58 : get_latest_checkpoint() ::	 No Checkpoints Found
+2021-05-30 07:13:33,126 | DEBUG | modelv2.py: 58 : __init__() ::	 Building Encoders...
+2021-05-30 07:13:33,159 | DEBUG | modelv2.py: 68 : __init__() ::	 Encoders Built...
+2021-05-30 07:13:33,192 | DEBUG | modelv2.py: 86 : __init__() ::	 Decoder RNN Built...
+2021-05-30 07:13:33,192 | DEBUG | modelv2.py: 88 : __init__() ::	 Initalizing Optimizer and Criterion...
+2021-05-30 07:13:33,194 | INFO | modelv2.py: 94 : __init__() ::	 All Model Components Initialized...
+2021-05-30 07:13:33,560 | INFO | main.py: 188 : main() ::	 Initialized Model
+2021-05-30 07:13:33,561 | DEBUG | main.py: 204 : main() ::	 Config File Saved
+2021-05-30 07:13:33,561 | INFO | main.py: 206 : main() ::	 Starting Training Procedure
+2021-05-30 07:13:33,561 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 1	
+2021-05-30 07:14:17,135 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 1 completed...
+Time Taken: 0.7262394030888876
+2021-05-30 07:14:17,135 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:14:21,025 | DEBUG | modelv2.py: 457 : train_model() ::	 Validation Bleu: 0.0
+2021-05-30 07:14:21,026 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 1	
+ best epoch: 1	
+ train loss epoch: 1.1399720524444052	
+ min train loss: 1.1399720524444052	
+ val loss epoch: 0.9293651580810547	
+ min val loss: 0.9293651580810547	
+ train acc epoch: 0.16428571428571428	
+ max train acc: 0.16428571428571428	
+ val acc epoch: 0.22784810126582278	
+ max val acc: 0.22784810126582278	
+ val bleu epoch: (0.0, [0.7693389592123769, 0.5421940928270043, 0.2616033755274262, 0.0], 0.8614952000444245, 0.8702570379436965, 711, 817)	
+ max val bleu: 0.0	
+2021-05-30 07:14:21,026 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 2	
+2021-05-30 07:15:04,296 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 2 completed...
+Time Taken: 0.7211701909701029
+2021-05-30 07:15:04,297 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:15:08,242 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 2	
+ best epoch: 1	
+ train loss epoch: 0.9235164114001656	
+ min train loss: 0.9235164114001656	
+ val loss epoch: 0.8697503805160522	
+ min val loss: 0.8697503805160522	
+ train acc epoch: 0.21326530612244898	
+ max train acc: 0.21326530612244898	
+ val acc epoch: 0.21518987341772153	
+ max val acc: 0.22784810126582278	
+ val bleu epoch: (0.0, [0.7665260196905767, 0.5485232067510548, 0.29535864978902954, 0.0], 0.8614952000444245, 0.8702570379436965, 711, 817)	
+ max val bleu: 0.0	
+2021-05-30 07:15:08,242 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 3	
+2021-05-30 07:15:52,099 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 3 completed...
+Time Taken: 0.7309456825256347
+2021-05-30 07:15:52,100 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:15:55,946 | DEBUG | modelv2.py: 457 : train_model() ::	 Validation Bleu: 0.32689218662513025
+2021-05-30 07:15:55,946 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 3	
+ best epoch: 3	
+ train loss epoch: 0.8725086312310226	
+ min train loss: 0.8725086312310226	
+ val loss epoch: 0.6686367392539978	
+ min val loss: 0.6686367392539978	
+ train acc epoch: 0.20714285714285716	
+ max train acc: 0.21326530612244898	
+ val acc epoch: 0.2489451476793249	
+ max val acc: 0.2489451476793249	
+ val bleu epoch: (0.32689218662513025, [0.7288941736028538, 0.5033112582781457, 0.26975476839237056, 0.11538461538461539], 1.0, 1.02937576499388, 841, 817)	
+ max val bleu: 0.32689218662513025	
+2021-05-30 07:15:55,946 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 4	
+2021-05-30 07:16:40,402 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 4 completed...
+Time Taken: 0.7409286141395569
+2021-05-30 07:16:40,403 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:16:44,228 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 4	
+ best epoch: 3	
+ train loss epoch: 0.6943845322748435	
+ min train loss: 0.6943845322748435	
+ val loss epoch: 0.6724771857261658	
+ min val loss: 0.6686367392539978	
+ train acc epoch: 0.24489795918367346	
+ max train acc: 0.24489795918367346	
+ val acc epoch: 0.24050632911392406	
+ max val acc: 0.2489451476793249	
+ val bleu epoch: (0.3847510288903108, [0.7667464114832536, 0.5158597662771286, 0.3011049723756906, 0.184], 1.0, 1.0232558139534884, 836, 817)	
+ max val bleu: 0.3847510288903108	
+2021-05-30 07:16:44,229 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 5	
+2021-05-30 07:17:28,608 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 5 completed...
+Time Taken: 0.7396510163942973
+2021-05-30 07:17:28,608 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:17:32,507 | DEBUG | modelv2.py: 457 : train_model() ::	 Validation Bleu: 0.4185338496576422
+2021-05-30 07:17:32,507 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 5	
+ best epoch: 5	
+ train loss epoch: 0.6426910277734807	
+ min train loss: 0.6426910277734807	
+ val loss epoch: 0.7421870827674866	
+ min val loss: 0.6686367392539978	
+ train acc epoch: 0.2826530612244898	
+ max train acc: 0.2826530612244898	
+ val acc epoch: 0.3670886075949367	
+ max val acc: 0.3670886075949367	
+ val bleu epoch: (0.4185338496576422, [0.7560693641618497, 0.554140127388535, 0.37595907928388744, 0.19480519480519481], 1.0, 1.0587515299877601, 865, 817)	
+ max val bleu: 0.4185338496576422	
+2021-05-30 07:17:32,507 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 6	
+2021-05-30 07:18:16,501 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 6 completed...
+Time Taken: 0.73322061697642
+2021-05-30 07:18:16,501 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:18:20,445 | DEBUG | modelv2.py: 457 : train_model() ::	 Validation Bleu: 0.44943639549136627
+2021-05-30 07:18:20,445 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 6	
+ best epoch: 6	
+ train loss epoch: 0.5784537530675226	
+ min train loss: 0.5784537530675226	
+ val loss epoch: 0.6630436778068542	
+ min val loss: 0.6630436778068542	
+ train acc epoch: 0.37551020408163266	
+ max train acc: 0.37551020408163266	
+ val acc epoch: 0.43037974683544306	
+ max val acc: 0.43037974683544306	
+ val bleu epoch: (0.44943639549136627, [0.8454172366621067, 0.645748987854251, 0.4785992217898833, 0.25], 0.8890097654027757, 0.8947368421052632, 731, 817)	
+ max val bleu: 0.44943639549136627	
+2021-05-30 07:18:20,445 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 7	
+2021-05-30 07:19:04,555 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 7 completed...
+Time Taken: 0.7351616581281026
+2021-05-30 07:19:04,556 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:19:08,512 | DEBUG | modelv2.py: 457 : train_model() ::	 Validation Bleu: 0.5008628140162285
+2021-05-30 07:19:08,513 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 7	
+ best epoch: 7	
+ train loss epoch: 0.479325255994894	
+ min train loss: 0.479325255994894	
+ val loss epoch: 0.5860520005226135	
+ min val loss: 0.5860520005226135	
+ train acc epoch: 0.49387755102040815	
+ max train acc: 0.49387755102040815	
+ val acc epoch: 0.5147679324894515	
+ max val acc: 0.5147679324894515	
+ val bleu epoch: (0.5008628140162285, [0.8573248407643312, 0.6624087591240876, 0.5080385852090032, 0.25675675675675674], 0.9600553583737197, 0.9608323133414932, 785, 817)	
+ max val bleu: 0.5008628140162285	
+2021-05-30 07:19:08,513 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 8	
+2021-05-30 07:19:52,788 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 8 completed...
+Time Taken: 0.737923816839854
+2021-05-30 07:19:52,789 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:19:56,683 | DEBUG | modelv2.py: 457 : train_model() ::	 Validation Bleu: 0.5379243421300248
+2021-05-30 07:19:56,684 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 8	
+ best epoch: 8	
+ train loss epoch: 0.4245699929592967	
+ min train loss: 0.4245699929592967	
+ val loss epoch: 0.5925332903862	
+ min val loss: 0.5860520005226135	
+ train acc epoch: 0.5683673469387756	
+ max train acc: 0.5683673469387756	
+ val acc epoch: 0.5316455696202531	
+ max val acc: 0.5316455696202531	
+ val bleu epoch: (0.5379243421300248, [0.8500619578686494, 0.6526315789473685, 0.5075075075075075, 0.3125], 0.987684885676577, 0.9877600979192166, 807, 817)	
+ max val bleu: 0.5379243421300248	
+2021-05-30 07:19:56,684 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 9	
+2021-05-30 07:20:40,651 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 9 completed...
+Time Taken: 0.7327834645907084
+2021-05-30 07:20:40,651 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:20:44,550 | DEBUG | modelv2.py: 457 : train_model() ::	 Validation Bleu: 0.5065704485659391
+2021-05-30 07:20:44,550 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 9	
+ best epoch: 9	
+ train loss epoch: 0.4012404529719938	
+ min train loss: 0.4012404529719938	
+ val loss epoch: 0.551314651966095	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.5806122448979592	
+ max train acc: 0.5806122448979592	
+ val acc epoch: 0.5443037974683544	
+ max val acc: 0.5443037974683544	
+ val bleu epoch: (0.5065704485659391, [0.8560975609756097, 0.6449399656946827, 0.5, 0.23853211009174313], 1.0, 1.003671970624235, 820, 817)	
+ max val bleu: 0.5379243421300248	
+2021-05-30 07:20:44,550 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 10	
+2021-05-30 07:21:28,466 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 10 completed...
+Time Taken: 0.7319289485613505
+2021-05-30 07:21:28,466 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:21:32,414 | DEBUG | modelv2.py: 457 : train_model() ::	 Validation Bleu: 0.5590771219217666
+2021-05-30 07:21:32,414 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 10	
+ best epoch: 10	
+ train loss epoch: 0.36870770575795453	
+ min train loss: 0.36870770575795453	
+ val loss epoch: 0.5556398630142212	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.5979591836734693	
+ max train acc: 0.5979591836734693	
+ val acc epoch: 0.5907172995780591	
+ max val acc: 0.5907172995780591	
+ val bleu epoch: (0.5590771219217666, [0.8851269649334945, 0.6796610169491526, 0.5382436260623229, 0.3017241379310345], 1.0, 1.0122399020807833, 827, 817)	
+ max val bleu: 0.5590771219217666	
+2021-05-30 07:21:32,414 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 11	
+2021-05-30 07:22:16,439 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 11 completed...
+Time Taken: 0.7337328871091207
+2021-05-30 07:22:16,439 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:22:20,372 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 11	
+ best epoch: 10	
+ train loss epoch: 0.35038073830509253	
+ min train loss: 0.35038073830509253	
+ val loss epoch: 0.594616711139679	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.6357142857142857	
+ max train acc: 0.6357142857142857	
+ val acc epoch: 0.5907172995780591	
+ max val acc: 0.5907172995780591	
+ val bleu epoch: (0.5260084783383111, [0.8700361010830325, 0.6683501683501684, 0.5266106442577031, 0.25], 1.0, 1.0171358629130967, 831, 817)	
+ max val bleu: 0.5590771219217666	
+2021-05-30 07:22:20,372 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 12	
+2021-05-30 07:23:04,311 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 12 completed...
+Time Taken: 0.7323030630747477
+2021-05-30 07:23:04,311 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:23:08,208 | DEBUG | modelv2.py: 457 : train_model() ::	 Validation Bleu: 0.596933200233582
+2021-05-30 07:23:08,208 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 12	
+ best epoch: 12	
+ train loss epoch: 0.30880976371707874	
+ min train loss: 0.30880976371707874	
+ val loss epoch: 0.6794767379760742	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.7020408163265306	
+ max train acc: 0.7020408163265306	
+ val acc epoch: 0.6329113924050633	
+ max val acc: 0.6329113924050633	
+ val bleu epoch: (0.596933200233582, [0.9121287128712872, 0.7180385288966725, 0.5958083832335329, 0.3402061855670103], 0.9889231908123496, 0.988984088127295, 808, 817)	
+ max val bleu: 0.596933200233582	
+2021-05-30 07:23:08,208 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 13	
+2021-05-30 07:23:52,117 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 13 completed...
+Time Taken: 0.7318014701207479
+2021-05-30 07:23:52,117 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:23:56,042 | DEBUG | modelv2.py: 457 : train_model() ::	 Validation Bleu: 0.6131953571304322
+2021-05-30 07:23:56,043 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 13	
+ best epoch: 13	
+ train loss epoch: 0.29626624530599427	
+ min train loss: 0.29626624530599427	
+ val loss epoch: 0.653928816318512	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.7234693877551021	
+ max train acc: 0.7234693877551021	
+ val acc epoch: 0.6666666666666666	
+ max val acc: 0.6666666666666666	
+ val bleu epoch: (0.6131953571304322, [0.9217391304347826, 0.7200704225352113, 0.6072507552870091, 0.3723404255319149], 0.985203724494181, 0.98531211750306, 805, 817)	
+ max val bleu: 0.6131953571304322	
+2021-05-30 07:23:56,043 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 14	
+2021-05-30 07:24:39,970 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 14 completed...
+Time Taken: 0.732119373480479
+2021-05-30 07:24:39,971 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:24:43,903 | DEBUG | modelv2.py: 457 : train_model() ::	 Validation Bleu: 0.5851452345844446
+2021-05-30 07:24:43,904 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 14	
+ best epoch: 14	
+ train loss epoch: 0.2978752981763662	
+ min train loss: 0.29626624530599427	
+ val loss epoch: 0.679565966129303	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.7214285714285714	
+ max train acc: 0.7234693877551021	
+ val acc epoch: 0.679324894514768	
+ max val acc: 0.679324894514768	
+ val bleu epoch: (0.5851452345844446, [0.9043062200956937, 0.7061769616026711, 0.5883977900552486, 0.312], 1.0, 1.0232558139534884, 836, 817)	
+ max val bleu: 0.6131953571304322	
+2021-05-30 07:24:43,904 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 15	
+2021-05-30 07:25:27,382 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 15 completed...
+Time Taken: 0.7246302048365275
+2021-05-30 07:25:27,382 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:25:31,226 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 15	
+ best epoch: 14	
+ train loss epoch: 0.2772269099125589	
+ min train loss: 0.2772269099125589	
+ val loss epoch: 0.6256436705589294	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.7581632653061224	
+ max train acc: 0.7581632653061224	
+ val acc epoch: 0.6666666666666666	
+ max val acc: 0.679324894514768	
+ val bleu epoch: (0.595896329318536, [0.898428053204353, 0.711864406779661, 0.5864022662889519, 0.33620689655172414], 1.0, 1.0122399020807833, 827, 817)	
+ max val bleu: 0.6131953571304322	
+2021-05-30 07:25:31,227 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 16	
+2021-05-30 07:26:15,110 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 16 completed...
+Time Taken: 0.7313817699750265
+2021-05-30 07:26:15,110 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:26:18,955 | DEBUG | modelv2.py: 457 : train_model() ::	 Validation Bleu: 0.6076320791419115
+2021-05-30 07:26:18,955 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 16	
+ best epoch: 16	
+ train loss epoch: 0.254466488841544	
+ min train loss: 0.254466488841544	
+ val loss epoch: 0.6717485785484314	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.7979591836734694	
+ max train acc: 0.7979591836734694	
+ val acc epoch: 0.70042194092827	
+ max val acc: 0.70042194092827	
+ val bleu epoch: (0.6076320791419115, [0.9106280193236715, 0.7292724196277496, 0.615819209039548, 0.3333333333333333], 1.0, 1.0134638922888617, 828, 817)	
+ max val bleu: 0.6131953571304322	
+2021-05-30 07:26:18,956 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 17	
+2021-05-30 07:27:02,594 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 17 completed...
+Time Taken: 0.7273027817408244
+2021-05-30 07:27:02,594 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:27:06,527 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 17	
+ best epoch: 16	
+ train loss epoch: 0.23522160888137136	
+ min train loss: 0.23522160888137136	
+ val loss epoch: 0.7459694743156433	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.8244897959183674	
+ max train acc: 0.8244897959183674	
+ val acc epoch: 0.6582278481012658	
+ max val acc: 0.70042194092827	
+ val bleu epoch: (0.637829375246018, [0.9218362282878412, 0.718804920913884, 0.6265060240963856, 0.42105263157894735], 0.9864450641729113, 0.9865361077111383, 806, 817)	
+ max val bleu: 0.637829375246018	
+2021-05-30 07:27:06,527 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 18	
+2021-05-30 07:27:50,261 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 18 completed...
+Time Taken: 0.7288892388343811
+2021-05-30 07:27:50,261 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:27:54,120 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 18	
+ best epoch: 16	
+ train loss epoch: 0.22505451235028268	
+ min train loss: 0.22505451235028268	
+ val loss epoch: 0.908490777015686	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.8571428571428571	
+ max train acc: 0.8571428571428571	
+ val acc epoch: 0.679324894514768	
+ max val acc: 0.70042194092827	
+ val bleu epoch: (0.596157762037238, [0.9138991389913899, 0.7204861111111112, 0.6047197640117994, 0.3235294117647059], 0.9950920344161237, 0.9951040391676866, 813, 817)	
+ max val bleu: 0.637829375246018	
+2021-05-30 07:27:54,120 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 19	
+2021-05-30 07:28:37,410 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 19 completed...
+Time Taken: 0.7214879274368287
+2021-05-30 07:28:37,410 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:28:41,285 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 19	
+ best epoch: 16	
+ train loss epoch: 0.2067855859167603	
+ min train loss: 0.2067855859167603	
+ val loss epoch: 0.7945650219917297	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.8571428571428571	
+ max train acc: 0.8571428571428571	
+ val acc epoch: 0.6666666666666666	
+ max val acc: 0.70042194092827	
+ val bleu epoch: (0.6118986845502127, [0.9087591240875912, 0.7094017094017094, 0.603448275862069, 0.36036036036036034], 1.0, 1.0061199510403918, 822, 817)	
+ max val bleu: 0.637829375246018	
+2021-05-30 07:28:41,286 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 20	
+2021-05-30 07:29:24,598 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 20 completed...
+Time Taken: 0.7218737840652466
+2021-05-30 07:29:24,599 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:29:28,571 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 20	
+ best epoch: 16	
+ train loss epoch: 0.18711761217534154	
+ min train loss: 0.18711761217534154	
+ val loss epoch: 0.7975843548774719	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.863265306122449	
+ max train acc: 0.863265306122449	
+ val acc epoch: 0.70042194092827	
+ max val acc: 0.70042194092827	
+ val bleu epoch: (0.6533483792184837, [0.9218559218559218, 0.7405498281786942, 0.6405797101449275, 0.4166666666666667], 1.0, 1.0024479804161566, 819, 817)	
+ max val bleu: 0.6533483792184837	
+2021-05-30 07:29:28,572 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 21	
+2021-05-30 07:30:11,797 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 21 completed...
+Time Taken: 0.7204125603040059
+2021-05-30 07:30:11,797 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:30:15,725 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 21	
+ best epoch: 16	
+ train loss epoch: 0.2015334172721763	
+ min train loss: 0.18711761217534154	
+ val loss epoch: 0.84920334815979	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.8622448979591837	
+ max train acc: 0.863265306122449	
+ val acc epoch: 0.6751054852320675	
+ max val acc: 0.70042194092827	
+ val bleu epoch: (0.6409751357685833, [0.9144254278728606, 0.7349397590361446, 0.625, 0.40186915887850466], 1.0, 1.0012239902080784, 818, 817)	
+ max val bleu: 0.6533483792184837	
+2021-05-30 07:30:15,725 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 22	
+2021-05-30 07:30:59,565 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 22 completed...
+Time Taken: 0.7306585113207499
+2021-05-30 07:30:59,565 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:31:03,476 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 22	
+ best epoch: 16	
+ train loss epoch: 0.16133001487166387	
+ min train loss: 0.16133001487166387	
+ val loss epoch: 0.9396834373474121	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.889795918367347	
+ max train acc: 0.889795918367347	
+ val acc epoch: 0.6582278481012658	
+ max val acc: 0.70042194092827	
+ val bleu epoch: (0.6037369339367267, [0.9067484662576687, 0.7145328719723183, 0.5982404692082112, 0.34615384615384615], 0.9975490208363301, 0.9975520195838433, 815, 817)	
+ max val bleu: 0.6533483792184837	
+2021-05-30 07:31:03,476 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 23	
+2021-05-30 07:31:47,537 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 23 completed...
+Time Taken: 0.7343498110771179
+2021-05-30 07:31:47,538 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:31:51,351 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 23	
+ best epoch: 16	
+ train loss epoch: 0.17071866197258742	
+ min train loss: 0.16133001487166387	
+ val loss epoch: 1.0414999723434448	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.8918367346938776	
+ max train acc: 0.8918367346938776	
+ val acc epoch: 0.6708860759493671	
+ max val acc: 0.70042194092827	
+ val bleu epoch: (0.6116937962962965, [0.9075425790754258, 0.7094017094017094, 0.603448275862069, 0.36036036036036034], 1.0, 1.0061199510403918, 822, 817)	
+ max val bleu: 0.6533483792184837	
+2021-05-30 07:31:51,352 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 24	
+2021-05-30 07:32:35,082 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 24 completed...
+Time Taken: 0.7288342515627543
+2021-05-30 07:32:35,082 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:32:38,961 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 24	
+ best epoch: 16	
+ train loss epoch: 0.1639329723356767	
+ min train loss: 0.16133001487166387	
+ val loss epoch: 1.0090230703353882	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.8959183673469387	
+ max train acc: 0.8959183673469387	
+ val acc epoch: 0.6624472573839663	
+ max val acc: 0.70042194092827	
+ val bleu epoch: (0.6027347889893033, [0.9013398294762485, 0.7174657534246576, 0.590778097982709, 0.34545454545454546], 1.0, 1.0048959608323134, 821, 817)	
+ max val bleu: 0.6533483792184837	
+2021-05-30 07:32:38,961 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 25	
+2021-05-30 07:33:22,224 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 25 completed...
+Time Taken: 0.7210436463356018
+2021-05-30 07:33:22,224 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:33:26,124 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 25	
+ best epoch: 16	
+ train loss epoch: 0.1349341536581323	
+ min train loss: 0.1349341536581323	
+ val loss epoch: 0.9989898204803467	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.9010204081632653	
+ max train acc: 0.9010204081632653	
+ val acc epoch: 0.679324894514768	
+ max val acc: 0.70042194092827	
+ val bleu epoch: (0.6488645357950721, [0.9181141439205955, 0.7398945518453427, 0.6385542168674698, 0.43157894736842106], 0.9864450641729113, 0.9865361077111383, 806, 817)	
+ max val bleu: 0.6533483792184837	
+2021-05-30 07:33:26,124 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 26	
+2021-05-30 07:34:09,354 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 26 completed...
+Time Taken: 0.7204865455627442
+2021-05-30 07:34:09,354 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:34:13,249 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 26	
+ best epoch: 16	
+ train loss epoch: 0.14512609127481688	
+ min train loss: 0.1349341536581323	
+ val loss epoch: 1.0298160314559937	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.8969387755102041	
+ max train acc: 0.9010204081632653	
+ val acc epoch: 0.679324894514768	
+ max val acc: 0.70042194092827	
+ val bleu epoch: (0.635859338752996, [0.9068627450980392, 0.7305699481865285, 0.6198830409356725, 0.4], 0.9987752604103803, 0.9987760097919217, 816, 817)	
+ max val bleu: 0.6533483792184837	
+2021-05-30 07:34:13,250 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 27	
+2021-05-30 07:34:56,804 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 27 completed...
+Time Taken: 0.7259012778600057
+2021-05-30 07:34:56,804 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:35:00,751 | DEBUG | modelv2.py: 457 : train_model() ::	 Validation Bleu: 0.6788783109487746
+2021-05-30 07:35:00,751 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 27	
+ best epoch: 27	
+ train loss epoch: 0.12944128731559854	
+ min train loss: 0.12944128731559854	
+ val loss epoch: 1.0911833047866821	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.9102040816326531	
+ max train acc: 0.9102040816326531	
+ val acc epoch: 0.7130801687763713	
+ max val acc: 0.7130801687763713	
+ val bleu epoch: (0.6788783109487746, [0.9229813664596274, 0.7711267605633803, 0.676737160120846, 0.46808510638297873], 0.985203724494181, 0.98531211750306, 805, 817)	
+ max val bleu: 0.6788783109487746	
+2021-05-30 07:35:00,751 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 28	
+2021-05-30 07:35:44,396 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 28 completed...
+Time Taken: 0.7274169325828552
+2021-05-30 07:35:44,397 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:35:48,325 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 28	
+ best epoch: 27	
+ train loss epoch: 0.12413141689114841	
+ min train loss: 0.12413141689114841	
+ val loss epoch: 1.1435896158218384	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.9153061224489796	
+ max train acc: 0.9153061224489796	
+ val acc epoch: 0.6962025316455697	
+ max val acc: 0.7130801687763713	
+ val bleu epoch: (0.6336960413104946, [0.9263420724094882, 0.7446808510638298, 0.6330275229357798, 0.4], 0.9802231479861708, 0.9804161566707467, 801, 817)	
+ max val bleu: 0.6788783109487746	
+2021-05-30 07:35:48,325 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 29	
+2021-05-30 07:36:32,176 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 29 completed...
+Time Taken: 0.7308541655540466
+2021-05-30 07:36:32,177 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:36:36,118 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 29	
+ best epoch: 27	
+ train loss epoch: 0.13951795445364573	
+ min train loss: 0.12413141689114841	
+ val loss epoch: 1.1106020212173462	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.9275510204081633	
+ max train acc: 0.9275510204081633	
+ val acc epoch: 0.6877637130801688	
+ max val acc: 0.7130801687763713	
+ val bleu epoch: (0.6736959353548735, [0.93875, 0.7300177619893428, 0.647239263803681, 0.5056179775280899], 0.97897419042636, 0.9791921664626683, 800, 817)	
+ max val bleu: 0.6788783109487746	
+2021-05-30 07:36:36,118 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 30	
+2021-05-30 07:37:19,352 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 30 completed...
+Time Taken: 0.7205659866333007
+2021-05-30 07:37:19,353 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:37:23,202 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 30	
+ best epoch: 27	
+ train loss epoch: 0.11186459676080901	
+ min train loss: 0.11186459676080901	
+ val loss epoch: 1.0096162557601929	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.9346938775510204	
+ max train acc: 0.9346938775510204	
+ val acc epoch: 0.6962025316455697	
+ max val acc: 0.7130801687763713	
+ val bleu epoch: (0.657682970706956, [0.9290953545232273, 0.7487091222030982, 0.6395348837209303, 0.4205607476635514], 1.0, 1.0012239902080784, 818, 817)	
+ max val bleu: 0.6788783109487746	
+2021-05-30 07:37:23,202 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 31	
+2021-05-30 07:38:06,960 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 31 completed...
+Time Taken: 0.7292949914932251
+2021-05-30 07:38:06,960 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:38:10,820 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 31	
+ best epoch: 27	
+ train loss epoch: 0.10507318431764873	
+ min train loss: 0.10507318431764873	
+ val loss epoch: 1.2716633081436157	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.9326530612244898	
+ max train acc: 0.9346938775510204	
+ val acc epoch: 0.6751054852320675	
+ max val acc: 0.7130801687763713	
+ val bleu epoch: (0.6243482674698481, [0.9273399014778325, 0.7026086956521739, 0.6035502958579881, 0.39603960396039606], 0.9938612839164888, 0.9938800489596084, 812, 817)	
+ max val bleu: 0.6788783109487746	
+2021-05-30 07:38:10,820 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 32	
+2021-05-30 07:38:53,787 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 32 completed...
+Time Taken: 0.7161062518755595
+2021-05-30 07:38:53,787 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:38:57,780 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 32	
+ best epoch: 27	
+ train loss epoch: 0.09441083669407585	
+ min train loss: 0.09441083669407585	
+ val loss epoch: 1.2276318073272705	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.9357142857142857	
+ max train acc: 0.9357142857142857	
+ val acc epoch: 0.70042194092827	
+ max val acc: 0.7130801687763713	
+ val bleu epoch: (0.6665035406849513, [0.9232673267326733, 0.7548161120840631, 0.6526946107784432, 0.4536082474226804], 0.9889231908123496, 0.988984088127295, 808, 817)	
+ max val bleu: 0.6788783109487746	
+2021-05-30 07:38:57,780 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 33	
+2021-05-30 07:39:41,285 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 33 completed...
+Time Taken: 0.7250661452611288
+2021-05-30 07:39:41,285 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:39:45,177 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 33	
+ best epoch: 27	
+ train loss epoch: 0.08033591078000167	
+ min train loss: 0.08033591078000167	
+ val loss epoch: 1.2475957870483398	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.9469387755102041	
+ max train acc: 0.9469387755102041	
+ val acc epoch: 0.6962025316455697	
+ max val acc: 0.7130801687763713	
+ val bleu epoch: (0.6642092586119003, [0.9333333333333333, 0.7452006980802792, 0.6517857142857143, 0.4444444444444444], 0.9913952592228081, 0.9914320685434517, 810, 817)	
+ max val bleu: 0.6788783109487746	
+2021-05-30 07:39:45,177 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 34	
+2021-05-30 07:40:28,208 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 34 completed...
+Time Taken: 0.7171830296516418
+2021-05-30 07:40:28,209 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:40:32,125 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 34	
+ best epoch: 27	
+ train loss epoch: 0.07446429566391748	
+ min train loss: 0.07446429566391748	
+ val loss epoch: 1.2943036556243896	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.9520408163265306	
+ max train acc: 0.9520408163265306	
+ val acc epoch: 0.70042194092827	
+ max val acc: 0.7130801687763713	
+ val bleu epoch: (0.6706146073865308, [0.9117647058823529, 0.7392055267702936, 0.6461988304093568, 0.4666666666666667], 0.9987752604103803, 0.9987760097919217, 816, 817)	
+ max val bleu: 0.6788783109487746	
+2021-05-30 07:40:32,126 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 35	
+2021-05-30 07:41:15,515 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 35 completed...
+Time Taken: 0.7231574734052022
+2021-05-30 07:41:15,516 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:41:19,396 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 35	
+ best epoch: 27	
+ train loss epoch: 0.07935127298271487	
+ min train loss: 0.07446429566391748	
+ val loss epoch: 1.4064948558807373	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.9530612244897959	
+ max train acc: 0.9530612244897959	
+ val acc epoch: 0.7046413502109705	
+ max val acc: 0.7130801687763713	
+ val bleu epoch: (0.6773954269870236, [0.9266169154228856, 0.7583774250440917, 0.6606060606060606, 0.4838709677419355], 0.9839608648360643, 0.9840881272949816, 804, 817)	
+ max val bleu: 0.6788783109487746	
+2021-05-30 07:41:19,397 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 36	
+2021-05-30 07:42:02,575 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 36 completed...
+Time Taken: 0.7196378827095031
+2021-05-30 07:42:02,576 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:42:06,513 | DEBUG | modelv2.py: 457 : train_model() ::	 Validation Bleu: 0.6488450038490399
+2021-05-30 07:42:06,513 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 36	
+ best epoch: 36	
+ train loss epoch: 0.06975302207456728	
+ min train loss: 0.06975302207456728	
+ val loss epoch: 1.171802282333374	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.960204081632653	
+ max train acc: 0.960204081632653	
+ val acc epoch: 0.7341772151898734	
+ max val acc: 0.7341772151898734	
+ val bleu epoch: (0.6488450038490399, [0.9258809234507898, 0.742320819112628, 0.6418338108882522, 0.4017857142857143], 1.0, 1.00734394124847, 823, 817)	
+ max val bleu: 0.6788783109487746	
+2021-05-30 07:42:06,513 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 37	
+2021-05-30 07:42:50,018 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 37 completed...
+Time Taken: 0.72507643699646
+2021-05-30 07:42:50,018 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:42:53,953 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 37	
+ best epoch: 36	
+ train loss epoch: 0.07277760920235153	
+ min train loss: 0.06975302207456728	
+ val loss epoch: 1.201384425163269	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.9581632653061225	
+ max train acc: 0.960204081632653	
+ val acc epoch: 0.7088607594936709	
+ max val acc: 0.7341772151898734	
+ val bleu epoch: (0.6612386969985089, [0.9261083743842364, 0.7495652173913043, 0.6479289940828402, 0.43564356435643564], 0.9938612839164888, 0.9938800489596084, 812, 817)	
+ max val bleu: 0.6788783109487746	
+2021-05-30 07:42:53,953 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 38	
+2021-05-30 07:43:37,075 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 38 completed...
+Time Taken: 0.7186961650848389
+2021-05-30 07:43:37,076 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:43:40,959 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 38	
+ best epoch: 36	
+ train loss epoch: 0.05871332507645162	
+ min train loss: 0.05871332507645162	
+ val loss epoch: 1.355177402496338	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.960204081632653	
+ max train acc: 0.960204081632653	
+ val acc epoch: 0.70042194092827	
+ max val acc: 0.7341772151898734	
+ val bleu epoch: (0.6618514490260186, [0.9276960784313726, 0.7409326424870466, 0.6403508771929824, 0.4380952380952381], 0.9987752604103803, 0.9987760097919217, 816, 817)	
+ max val bleu: 0.6788783109487746	
+2021-05-30 07:43:40,960 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 39	
+2021-05-30 07:44:24,222 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 39 completed...
+Time Taken: 0.7210277358690897
+2021-05-30 07:44:24,222 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:44:28,089 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 39	
+ best epoch: 36	
+ train loss epoch: 0.05423112797994739	
+ min train loss: 0.05423112797994739	
+ val loss epoch: 1.3948333263397217	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.9673469387755103	
+ max train acc: 0.9673469387755103	
+ val acc epoch: 0.70042194092827	
+ max val acc: 0.7341772151898734	
+ val bleu epoch: (0.6302994280919465, [0.9317904993909866, 0.7414383561643836, 0.6282420749279539, 0.36363636363636365], 1.0, 1.0048959608323134, 821, 817)	
+ max val bleu: 0.6788783109487746	
+2021-05-30 07:44:28,089 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 40	
+2021-05-30 07:45:11,009 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 40 completed...
+Time Taken: 0.7153242111206055
+2021-05-30 07:45:11,009 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:45:14,935 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 40	
+ best epoch: 36	
+ train loss epoch: 0.07965680388259157	
+ min train loss: 0.05423112797994739	
+ val loss epoch: 1.3862706422805786	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.9653061224489796	
+ max train acc: 0.9673469387755103	
+ val acc epoch: 0.7046413502109705	
+ max val acc: 0.7341772151898734	
+ val bleu epoch: (0.6983913557804821, [0.9332509270704573, 0.7587412587412588, 0.6716417910447762, 0.5204081632653061], 0.9901599813901933, 0.9902080783353733, 809, 817)	
+ max val bleu: 0.6983913557804821	
+2021-05-30 07:45:14,935 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 41	
+2021-05-30 07:45:57,983 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 41 completed...
+Time Taken: 0.7174703121185303
+2021-05-30 07:45:57,984 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:46:01,857 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 41	
+ best epoch: 36	
+ train loss epoch: 0.06433397640647205	
+ min train loss: 0.05423112797994739	
+ val loss epoch: 1.4425554275512695	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.9704081632653061	
+ max train acc: 0.9704081632653061	
+ val acc epoch: 0.7130801687763713	
+ max val acc: 0.7341772151898734	
+ val bleu epoch: (0.6629547724459, [0.932349323493235, 0.7447916666666666, 0.6430678466076696, 0.4411764705882353], 0.9950920344161237, 0.9951040391676866, 813, 817)	
+ max val bleu: 0.6983913557804821	
+2021-05-30 07:46:01,857 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 42	
+2021-05-30 07:46:44,736 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 42 completed...
+Time Taken: 0.7146495342254638
+2021-05-30 07:46:44,737 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:46:48,616 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 42	
+ best epoch: 36	
+ train loss epoch: 0.07254557656239101	
+ min train loss: 0.05423112797994739	
+ val loss epoch: 1.4480527639389038	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.9704081632653061	
+ max train acc: 0.9704081632653061	
+ val acc epoch: 0.7046413502109705	
+ max val acc: 0.7341772151898734	
+ val bleu epoch: (0.6202134365440096, [0.9228886168910648, 0.7362068965517241, 0.6239067055393586, 0.3490566037735849], 1.0, 1.0, 817, 817)	
+ max val bleu: 0.6983913557804821	
+2021-05-30 07:46:48,616 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 43	
+2021-05-30 07:47:31,713 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 43 completed...
+Time Taken: 0.7182861685752868
+2021-05-30 07:47:31,714 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:47:35,629 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 43	
+ best epoch: 36	
+ train loss epoch: 0.04997824066873618	
+ min train loss: 0.04997824066873618	
+ val loss epoch: 1.4608137607574463	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.976530612244898	
+ max train acc: 0.976530612244898	
+ val acc epoch: 0.7341772151898734	
+ max val acc: 0.7341772151898734	
+ val bleu epoch: (0.6802396274612496, [0.9320388349514563, 0.7563884156729132, 0.66, 0.46017699115044247], 1.0, 1.0085679314565483, 824, 817)	
+ max val bleu: 0.6983913557804821	
+2021-05-30 07:47:35,629 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 44	
+2021-05-30 07:48:18,776 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 44 completed...
+Time Taken: 0.719109034538269
+2021-05-30 07:48:18,777 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:48:22,773 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 44	
+ best epoch: 36	
+ train loss epoch: 0.05395792648883786	
+ min train loss: 0.04997824066873618	
+ val loss epoch: 1.4454716444015503	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.9734693877551021	
+ max train acc: 0.976530612244898	
+ val acc epoch: 0.7130801687763713	
+ max val acc: 0.7341772151898734	
+ val bleu epoch: (0.6814008635817365, [0.9317904993909866, 0.7448630136986302, 0.6570605187319885, 0.4727272727272727], 1.0, 1.0048959608323134, 821, 817)	
+ max val bleu: 0.6983913557804821	
+2021-05-30 07:48:22,773 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 45	
+2021-05-30 07:49:05,980 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 45 completed...
+Time Taken: 0.7201189597447714
+2021-05-30 07:49:05,981 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:49:09,905 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 45	
+ best epoch: 36	
+ train loss epoch: 0.04353119849598989	
+ min train loss: 0.04353119849598989	
+ val loss epoch: 1.7298612594604492	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.9816326530612245	
+ max train acc: 0.9816326530612245	
+ val acc epoch: 0.6708860759493671	
+ max val acc: 0.7341772151898734	
+ val bleu epoch: (0.6214418758444915, [0.9171741778319124, 0.7208904109589042, 0.6051873198847262, 0.37272727272727274], 1.0, 1.0048959608323134, 821, 817)	
+ max val bleu: 0.6983913557804821	
+2021-05-30 07:49:09,905 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 46	
+2021-05-30 07:49:52,480 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 46 completed...
+Time Taken: 0.7095729072888692
+2021-05-30 07:49:52,481 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:49:56,332 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 46	
+ best epoch: 36	
+ train loss epoch: 0.055693017396548784	
+ min train loss: 0.04353119849598989	
+ val loss epoch: 2.0558323860168457	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.9755102040816327	
+ max train acc: 0.9816326530612245	
+ val acc epoch: 0.6624472573839663	
+ max val acc: 0.7341772151898734	
+ val bleu epoch: (0.6051340199665116, [0.9060975609756098, 0.7049742710120068, 0.5867052023121387, 0.3577981651376147], 1.0, 1.003671970624235, 820, 817)	
+ max val bleu: 0.6983913557804821	
+2021-05-30 07:49:56,332 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 47	
+2021-05-30 07:50:39,188 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 47 completed...
+Time Taken: 0.7142639279365539
+2021-05-30 07:50:39,188 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:50:43,043 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 47	
+ best epoch: 36	
+ train loss epoch: 0.05620499451272498	
+ min train loss: 0.04353119849598989	
+ val loss epoch: 1.6552640199661255	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.9734693877551021	
+ max train acc: 0.9816326530612245	
+ val acc epoch: 0.6962025316455697	
+ max val acc: 0.7341772151898734	
+ val bleu epoch: (0.6251784787908602, [0.927007299270073, 0.7367521367521368, 0.6206896551724138, 0.36036036036036034], 1.0, 1.0061199510403918, 822, 817)	
+ max val bleu: 0.6983913557804821	
+2021-05-30 07:50:43,043 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 48	
+2021-05-30 07:51:25,811 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 48 completed...
+Time Taken: 0.7128065268198649
+2021-05-30 07:51:25,812 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:51:29,638 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 48	
+ best epoch: 36	
+ train loss epoch: 0.061043475034314	
+ min train loss: 0.04353119849598989	
+ val loss epoch: 1.6958856582641602	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.9795918367346939	
+ max train acc: 0.9816326530612245	
+ val acc epoch: 0.70042194092827	
+ max val acc: 0.7341772151898734	
+ val bleu epoch: (0.6418998781966582, [0.9218559218559218, 0.7353951890034365, 0.6289855072463768, 0.39814814814814814], 1.0, 1.0024479804161566, 819, 817)	
+ max val bleu: 0.6983913557804821	
+2021-05-30 07:51:29,638 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 49	
+2021-05-30 07:52:12,328 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 49 completed...
+Time Taken: 0.7115017056465149
+2021-05-30 07:52:12,329 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:52:16,186 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 49	
+ best epoch: 36	
+ train loss epoch: 0.03331938774614443	
+ min train loss: 0.03331938774614443	
+ val loss epoch: 1.9588432312011719	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.9816326530612245	
+ max train acc: 0.9816326530612245	
+ val acc epoch: 0.70042194092827	
+ max val acc: 0.7341772151898734	
+ val bleu epoch: (0.6554809449966983, [0.9235511713933415, 0.7334494773519163, 0.6379821958456974, 0.44], 0.9926290261255729, 0.99265605875153, 811, 817)	
+ max val bleu: 0.6983913557804821	
+2021-05-30 07:52:16,186 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 50	
+2021-05-30 07:52:58,935 | DEBUG | modelv2.py: 397 : train_model() ::	 Training for epoch 50 completed...
+Time Taken: 0.7124781330426534
+2021-05-30 07:52:58,936 | DEBUG | modelv2.py: 398 : train_model() ::	 Starting Validation
+2021-05-30 07:53:02,839 | INFO | logger.py: 33 : print_log() ::	 
+ Epoch: 50	
+ best epoch: 36	
+ train loss epoch: 0.04444563263301371	
+ min train loss: 0.03331938774614443	
+ val loss epoch: 1.76643967628479	
+ min val loss: 0.551314651966095	
+ train acc epoch: 0.9836734693877551	
+ max train acc: 0.9836734693877551	
+ val acc epoch: 0.6835443037974683	
+ max val acc: 0.7341772151898734	
+ val bleu epoch: (0.6450835500183262, [0.9218559218559218, 0.7268041237113402, 0.6202898550724638, 0.4166666666666667], 1.0, 1.0024479804161566, 819, 817)	
+ max val bleu: 0.6983913557804821	
+2021-05-30 07:53:02,840 | INFO | modelv2.py: 496 : train_model() ::	 Training Completed for 50 epochs
+2021-05-30 07:53:02,840 | INFO | modelv2.py: 500 : train_model() ::	 Scores saved at ./out/val_results_cv_asdiv-a_fold3.json

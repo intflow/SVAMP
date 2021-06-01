@@ -1,0 +1,26 @@
+{
+    "run_cv_asdiv-a": {
+        "run name": "run_cv_asdiv-a",
+        "max val acc": "0.7341772151898734",
+        "max train acc": "0.9836734693877551",
+        "max val bleu": "0.6983913557804821",
+        "min val loss": "0.551314651966095",
+        "min train loss": "0.03331938774614443",
+        "best epoch": "36",
+        "epochs": 50,
+        "dataset": "fold3",
+        "embedding": "roberta",
+        "embedding_size": 768,
+        "embedding_lr": 8e-06,
+        "freeze_emb": false,
+        "cell_type": "lstm",
+        "bidirectional": true,
+        "hidden_size": 256,
+        "depth": 2,
+        "lr": 0.0002,
+        "batch_size": 4,
+        "dropout": 0.1,
+        "separate optimizers": false,
+        "opt": "adam"
+    }
+}
